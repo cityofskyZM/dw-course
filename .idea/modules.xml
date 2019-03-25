@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/batch-etl/batch-etl.iml" filepath="$PROJECT_DIR$/batch-etl/batch-etl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dw-course.iml" filepath="$PROJECT_DIR$/dw-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-webServer/log-webServer.iml" filepath="$PROJECT_DIR$/log-webServer/log-webServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streaming-etl/streaming-etl.iml" filepath="$PROJECT_DIR$/streaming-etl/streaming-etl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-sys/trade-sys.iml" filepath="$PROJECT_DIR$/trade-sys/trade-sys.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,965 @@
+2018-06-13 17:39:07.078 [main] INFO  com.twq.WebApplication - Starting WebApplication on LAPTOP-SRR2VMQK with PID 14032 (E:\bigdata-course\workspace\dw-course\trade-sys\target\classes started by think in E:\bigdata-course\workspace\dw-course)
+2018-06-13 17:39:07.134 [main] INFO  com.twq.WebApplication - No active profile set, falling back to default profiles: default
+2018-06-13 17:39:07.307 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Wed Jun 13 17:39:07 CST 2018]; root of context hierarchy
+2018-06-13 17:39:10.278 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-06-13 17:39:10.296 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-06-13 17:39:10.308 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-13 17:39:10.309 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-13 17:39:10.322 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\python;D:\工作软件\apache-maven-3.5.3\bin;D:\Program Files\Java\jdk1.8.0_161\bin;E:\bigdata-course-thinkpad\bigdata-course\spark\scala-2.11.8\scala-2.11.8\bin;E:\bigdata-course\2_大数据入门\hadoop-2.7.5\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\think\AppData\Local\Microsoft\WindowsApps;;.]
+2018-06-13 17:39:10.438 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-13 17:39:10.439 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3132 ms
+2018-06-13 17:39:10.644 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-06-13 17:39:10.651 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-13 17:39:10.652 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-13 17:39:10.652 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-13 17:39:10.652 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-13 17:39:10.809 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 17:39:11.117 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Wed Jun 13 17:39:07 CST 2018]; root of context hierarchy
+2018-06-13 17:39:11.214 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/index]}" onto public java.lang.String com.twq.controller.ShoppingCartController.index(org.springframework.ui.Model)
+2018-06-13 17:39:11.215 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/succ]}" onto public java.lang.String com.twq.controller.ShoppingCartController.succ()
+2018-06-13 17:39:11.217 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/add],methods=[POST]}" onto public java.lang.String com.twq.controller.ShoppingCartController.addProduct2Cart()
+2018-06-13 17:39:11.226 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-13 17:39:11.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-13 17:39:11.256 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 17:39:11.257 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 17:39:11.467 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-06-13 17:39:11.590 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-13 17:39:11.607 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-06-13 17:39:11.619 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-13 17:39:11.637 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-13 17:39:11.641 [main] INFO  com.twq.WebApplication - Started WebApplication in 5.281 seconds (JVM running for 6.265)
+2018-06-13 17:40:21.669 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 17:40:21.670 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-13 17:40:21.686 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-13 17:40:25.672 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 17:40:25.672 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 17:40:25.672 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 17:40:25.672 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 17:40:25.672 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 17:48:49.447 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 17:48:49.447 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 17:48:49.447 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 17:48:49.447 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 17:48:49.447 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 17:49:16.142 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 17:49:16.142 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 17:49:16.142 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 17:49:16.142 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 17:49:16.143 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 17:49:17.958 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 17:49:17.958 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 17:49:17.959 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 17:49:17.959 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 17:49:17.959 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 17:49:35.575 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 17:49:35.576 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 17:49:35.576 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 17:49:35.576 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 17:49:35.576 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 17:49:53.519 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 17:49:53.519 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 17:49:53.519 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 17:49:53.519 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 17:49:53.519 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:24:05.071 [main] INFO  com.twq.WebApplication - Starting WebApplication on LAPTOP-SRR2VMQK with PID 7576 (E:\bigdata-course\workspace\dw-course\trade-sys\target\classes started by think in E:\bigdata-course\workspace\dw-course)
+2018-06-13 18:24:05.076 [main] INFO  com.twq.WebApplication - No active profile set, falling back to default profiles: default
+2018-06-13 18:24:05.262 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56528192: startup date [Wed Jun 13 18:24:05 CST 2018]; root of context hierarchy
+2018-06-13 18:24:08.740 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-06-13 18:24:08.762 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-06-13 18:24:08.776 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-13 18:24:08.776 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-13 18:24:08.787 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\python;D:\工作软件\apache-maven-3.5.3\bin;D:\Program Files\Java\jdk1.8.0_161\bin;E:\bigdata-course-thinkpad\bigdata-course\spark\scala-2.11.8\scala-2.11.8\bin;E:\bigdata-course\2_大数据入门\hadoop-2.7.5\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\think\AppData\Local\Microsoft\WindowsApps;;.]
+2018-06-13 18:24:08.919 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-13 18:24:08.919 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3658 ms
+2018-06-13 18:24:09.133 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-06-13 18:24:09.138 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-13 18:24:09.138 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-13 18:24:09.139 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-13 18:24:09.139 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-13 18:24:09.290 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 18:24:09.657 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56528192: startup date [Wed Jun 13 18:24:05 CST 2018]; root of context hierarchy
+2018-06-13 18:24:09.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/index]}" onto public java.lang.String com.twq.controller.ShoppingCartController.index(org.springframework.ui.Model)
+2018-06-13 18:24:09.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/succ]}" onto public java.lang.String com.twq.controller.ShoppingCartController.succ()
+2018-06-13 18:24:09.767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/add],methods=[POST]}" onto public java.lang.String com.twq.controller.ShoppingCartController.addProduct2Cart()
+2018-06-13 18:24:09.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-13 18:24:09.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-13 18:24:09.811 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 18:24:09.811 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 18:24:10.081 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-06-13 18:24:10.204 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-13 18:24:10.303 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-06-13 18:24:10.324 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-13 18:24:10.361 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-13 18:24:10.368 [main] INFO  com.twq.WebApplication - Started WebApplication in 5.746 seconds (JVM running for 6.624)
+2018-06-13 18:24:15.645 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 18:24:15.645 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-13 18:24:15.684 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2018-06-13 18:24:19.758 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:24:19.758 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:24:19.759 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:24:19.759 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:24:19.759 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:24:21.373 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:24:21.374 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:24:21.374 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:24:21.374 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:24:21.374 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:24:22.742 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:24:22.742 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:24:22.742 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:24:22.742 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:24:22.742 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:24:24.213 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:24:24.213 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:24:24.213 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:24:24.213 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:24:24.214 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:24:38.334 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:24:38.334 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:24:38.334 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:24:38.335 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:24:38.335 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:24:42.910 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:24:42.911 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:24:42.911 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:24:42.911 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:24:42.911 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:25:46.206 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:25:46.206 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:25:46.206 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:25:46.206 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:25:46.206 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 18:26:49.927 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 18:26:49.927 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 18:26:49.927 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 18:26:49.927 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 18:26:49.927 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:10:40.796 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:10:40.797 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:10:40.797 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:10:40.797 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:10:40.797 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:11:36.870 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:11:36.870 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:11:36.870 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:11:36.870 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:11:36.870 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:11:50.789 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:11:50.789 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:11:50.789 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:11:50.789 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:11:50.789 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:39:14.295 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:39:14.296 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:39:14.296 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:39:14.296 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:39:14.296 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:39:19.988 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:39:19.988 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:39:19.988 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:39:19.988 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:39:19.988 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:41:20.223 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:41:20.224 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:41:20.224 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:41:20.224 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:41:20.224 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:41:22.044 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:41:22.044 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:41:22.044 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:41:22.044 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:41:22.044 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:41:23.275 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:41:23.275 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:41:23.275 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:41:23.275 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:41:23.276 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:43:50.852 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:43:50.852 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:43:50.852 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:43:50.853 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:43:50.853 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:43:52.547 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:43:52.548 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:43:52.548 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:43:52.548 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:43:52.548 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:44:18.842 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:44:18.843 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:44:18.843 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:44:18.843 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:44:18.843 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:44:20.339 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:44:20.339 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:44:20.339 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:44:20.339 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:44:20.340 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:44:21.882 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:44:21.883 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:44:21.883 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:44:21.883 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:44:21.883 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:44:23.219 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:44:23.219 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:44:23.219 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:44:23.219 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:44:23.219 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:44:24.395 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:44:24.396 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:44:24.396 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:44:24.396 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:44:24.396 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:44:25.418 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:44:25.419 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:44:25.419 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:44:25.419 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:44:25.419 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:44:26.491 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:44:26.491 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:44:26.491 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:44:26.491 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:44:26.491 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:59:09.805 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:59:09.806 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:59:09.806 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:59:09.806 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:59:09.806 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:59:11.404 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:59:11.404 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:59:11.404 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:59:11.404 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:59:11.404 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:59:12.650 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:59:13.702 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:59:13.702 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:59:13.702 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:59:13.702 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:59:14.905 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:59:14.905 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:59:14.906 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:59:14.906 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:59:14.906 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 20:59:16.010 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 20:59:16.010 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 20:59:16.010 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 20:59:16.010 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 20:59:16.010 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:01.364 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:01.364 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:01.364 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:01.364 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:01.364 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:02.858 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:03.699 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:04.402 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:04.951 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:04.951 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:04.951 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:04.951 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:04.951 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:04.951 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:04.951 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:04.951 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:04.951 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:04.951 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:04.951 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:04.951 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:06.770 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:06.771 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:06.771 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:06.771 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:06.771 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:08.050 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:08.050 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:08.050 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:08.050 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:08.050 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:09.418 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:09.419 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:09.419 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:09.419 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:09.419 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:44.796 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:44.796 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:44.796 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:44.796 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:44.796 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:46.507 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:47.242 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:47.663 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:47.663 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:47.664 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:47.664 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:47.664 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:47.664 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:47.664 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:47.664 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:49.251 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:49.251 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:49.251 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:49.251 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:49.251 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:50.699 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:50.699 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:50.699 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:50.699 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:50.699 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:52.155 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:52.155 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:52.155 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:52.155 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:52.155 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:00:53.298 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:00:53.298 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:00:53.298 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:00:53.298 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:00:53.298 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:01:13.964 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:01:13.964 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:01:13.964 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:01:13.964 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:01:13.965 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:01:15.211 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:01:15.211 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:01:15.211 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:01:15.211 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:01:15.211 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:01:16.466 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:01:16.466 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:01:16.466 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:01:16.466 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:01:16.466 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:06:25.278 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:06:25.278 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:06:25.278 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:06:25.278 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:06:25.279 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:06:26.882 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:06:26.883 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:06:26.883 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:06:26.883 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:06:26.883 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:06:28.193 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:06:28.194 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:06:28.194 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:06:28.194 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:06:28.194 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:07:14.388 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:07:14.388 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:07:14.388 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:07:14.388 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:07:14.388 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:07:15.754 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:07:16.515 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:07:17.166 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:07:17.166 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:07:17.166 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:07:17.167 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:07:17.167 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:07:17.167 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:07:17.167 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:07:17.167 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:07:18.634 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:07:18.634 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:07:18.634 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:07:18.634 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:07:18.634 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:07:19.762 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:07:19.762 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:07:19.762 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:07:19.762 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:07:19.762 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:27:32.829 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:27:32.830 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:27:32.830 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:27:32.830 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:27:32.830 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:27:34.179 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:27:34.180 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:27:34.180 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:27:34.180 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:27:34.180 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:27:35.498 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:27:35.498 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:27:35.498 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:27:35.499 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:27:35.499 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:27:36.722 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:27:36.722 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:27:36.722 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:27:36.722 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:27:36.722 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:27:37.777 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:27:37.778 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:27:37.778 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:27:37.778 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:27:37.778 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:28:12.943 [main] INFO  com.twq.WebApplication - Starting WebApplication on LAPTOP-SRR2VMQK with PID 2864 (E:\bigdata-course\workspace\dw-course\trade-sys\target\classes started by think in E:\bigdata-course\workspace\dw-course)
+2018-06-13 21:28:12.947 [main] INFO  com.twq.WebApplication - No active profile set, falling back to default profiles: default
+2018-06-13 21:28:13.170 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56528192: startup date [Wed Jun 13 21:28:13 CST 2018]; root of context hierarchy
+2018-06-13 21:28:16.378 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-06-13 21:28:16.396 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-06-13 21:28:16.406 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-13 21:28:16.406 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-13 21:28:16.415 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\python;D:\工作软件\apache-maven-3.5.3\bin;D:\Program Files\Java\jdk1.8.0_161\bin;E:\bigdata-course-thinkpad\bigdata-course\spark\scala-2.11.8\scala-2.11.8\bin;E:\bigdata-course\2_大数据入门\hadoop-2.7.5\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\think\AppData\Local\Microsoft\WindowsApps;;.]
+2018-06-13 21:28:16.523 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-13 21:28:16.524 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3353 ms
+2018-06-13 21:28:16.689 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-06-13 21:28:16.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-13 21:28:16.696 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-13 21:28:16.696 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-13 21:28:16.696 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-13 21:28:16.877 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 21:28:17.139 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56528192: startup date [Wed Jun 13 21:28:13 CST 2018]; root of context hierarchy
+2018-06-13 21:28:17.255 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/index]}" onto public java.lang.String com.twq.controller.ShoppingCartController.index(org.springframework.ui.Model)
+2018-06-13 21:28:17.257 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/succ]}" onto public java.lang.String com.twq.controller.ShoppingCartController.succ()
+2018-06-13 21:28:17.258 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/add],methods=[POST]}" onto public java.lang.String com.twq.controller.ShoppingCartController.addProduct2Cart()
+2018-06-13 21:28:17.264 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-13 21:28:17.267 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-13 21:28:17.309 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 21:28:17.310 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-13 21:28:17.559 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-06-13 21:28:17.738 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-13 21:28:17.900 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-06-13 21:28:17.912 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-13 21:28:17.935 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-13 21:28:17.941 [main] INFO  com.twq.WebApplication - Started WebApplication in 5.545 seconds (JVM running for 6.376)
+2018-06-13 21:28:20.817 [http-nio-8080-exec-10] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-13 21:28:20.817 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-13 21:28:20.841 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-06-13 21:28:32.305 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:28:32.306 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:28:32.306 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:28:32.306 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:28:32.306 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:28:33.853 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:28:33.853 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:28:33.853 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:28:33.854 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:28:33.854 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:28:35.076 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:28:35.076 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:28:35.076 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:28:35.076 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:28:35.076 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:28:36.363 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:28:36.364 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:28:36.364 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:28:36.364 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:28:36.364 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:28:37.570 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:28:37.571 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:28:37.571 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:28:37.571 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:28:37.571 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:31:08.432 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:31:08.432 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:31:08.433 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:31:08.433 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:31:08.433 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:31:09.872 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:31:09.872 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:31:09.873 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:31:09.873 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:31:09.873 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:31:11.146 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:31:11.146 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:31:11.147 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:31:11.147 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:31:11.147 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:31:12.274 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:31:13.322 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:31:13.408 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:31:13.408 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:31:13.408 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:31:13.408 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:31:13.408 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:31:13.408 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:31:13.408 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:31:13.408 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:39:14.301 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:39:14.302 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:39:14.302 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:39:14.302 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:39:14.302 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:39:15.908 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:39:15.909 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:39:15.909 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:39:15.909 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:39:15.909 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:39:17.178 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:39:17.178 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:39:17.178 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:39:17.179 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:39:17.179 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:39:18.377 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:39:18.378 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:39:18.378 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:39:18.378 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:39:18.378 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:39:19.658 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:39:19.659 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:39:19.659 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:39:19.659 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:39:19.659 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:17.527 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:17.527 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:17.527 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:17.527 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:17.527 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:19.075 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:19.931 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:19.931 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:19.932 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:19.932 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:21.179 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:21.179 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:21.180 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:21.180 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:21.180 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:22.298 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:22.298 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:22.298 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:22.298 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:22.298 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:23.594 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:23.595 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:23.595 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:23.595 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:23.595 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:24.874 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:24.874 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:24.874 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:24.874 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:24.874 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:25.978 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:25.979 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:25.979 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:25.979 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:25.979 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:26.978 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:26.978 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:26.978 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:26.978 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:26.978 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-13 21:49:27.961 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-13 21:49:27.962 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-13 21:49:27.962 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-13 21:49:27.962 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-13 21:49:27.962 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 09:44:52.635 [main] INFO  com.twq.WebApplication - Starting WebApplication on LAPTOP-SRR2VMQK with PID 4840 (E:\bigdata-course\workspace\dw-course\trade-sys\target\classes started by think in E:\bigdata-course\workspace\dw-course)
+2018-06-14 09:44:52.680 [main] INFO  com.twq.WebApplication - No active profile set, falling back to default profiles: default
+2018-06-14 09:44:52.839 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5a5ed1: startup date [Thu Jun 14 09:44:52 CST 2018]; root of context hierarchy
+2018-06-14 09:44:55.188 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-06-14 09:44:55.210 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-06-14 09:44:55.223 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-14 09:44:55.223 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-14 09:44:55.240 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\python;D:\工作软件\apache-maven-3.5.3\bin;D:\Program Files\Java\jdk1.8.0_161\bin;E:\bigdata-course-thinkpad\bigdata-course\spark\scala-2.11.8\scala-2.11.8\bin;E:\bigdata-course\2_大数据入门\hadoop-2.7.5\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\think\AppData\Local\Microsoft\WindowsApps;;.]
+2018-06-14 09:44:55.860 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-14 09:44:55.860 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3021 ms
+2018-06-14 09:44:56.001 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-06-14 09:44:56.007 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 09:44:56.008 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 09:44:56.008 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 09:44:56.008 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 09:44:56.404 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 09:44:56.871 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5a5ed1: startup date [Thu Jun 14 09:44:52 CST 2018]; root of context hierarchy
+2018-06-14 09:44:57.012 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/index]}" onto public java.lang.String com.twq.controller.ShoppingCartController.index(org.springframework.ui.Model)
+2018-06-14 09:44:57.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/succ]}" onto public java.lang.String com.twq.controller.ShoppingCartController.succ()
+2018-06-14 09:44:57.016 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/add],methods=[POST]}" onto public java.lang.String com.twq.controller.ShoppingCartController.addProduct2Cart()
+2018-06-14 09:44:57.025 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 09:44:57.026 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 09:44:57.082 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 09:44:57.083 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 09:44:57.458 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-06-14 09:44:57.591 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-14 09:44:57.691 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-06-14 09:44:57.701 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-14 09:44:57.741 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-14 09:44:57.746 [main] INFO  com.twq.WebApplication - Started WebApplication in 5.887 seconds (JVM running for 9.148)
+2018-06-14 09:45:03.029 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 09:45:03.030 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 09:45:03.046 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-14 09:45:07.664 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 09:45:07.664 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 09:45:07.664 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 09:45:07.664 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 09:45:07.664 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 09:45:12.772 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 09:45:12.772 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 09:45:12.772 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 09:45:12.772 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 09:45:12.772 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 09:54:22.682 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 09:54:22.682 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 09:54:22.682 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 09:54:22.683 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 09:54:22.683 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 09:54:24.185 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 09:54:24.186 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 09:54:24.186 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 09:54:24.186 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 09:54:24.186 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 09:54:25.447 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 09:54:25.448 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 09:54:25.448 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 09:54:25.448 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 09:54:25.448 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:00:01.610 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:00:01.610 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:00:01.611 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:00:01.611 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:00:01.611 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:00:02.926 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:00:02.927 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:00:02.927 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:00:02.927 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:00:02.927 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:00:04.054 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:00:04.055 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:00:04.055 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:00:04.055 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:00:04.055 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:00:05.087 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:00:05.087 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:00:05.088 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:00:05.088 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:00:05.088 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:00:06.063 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:00:06.064 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:00:06.064 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:00:06.064 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:00:06.064 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:00:07.111 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:00:07.112 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:00:07.112 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:00:07.112 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:00:07.112 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:20:09.169 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:20:09.170 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:20:09.170 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:20:09.170 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:20:09.170 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:20:10.906 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:20:10.906 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:20:10.906 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:20:10.907 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:20:10.907 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:20:12.271 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:20:12.271 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:20:12.272 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:20:12.272 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:20:12.272 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:20:13.600 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:20:13.601 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:20:13.601 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:20:13.601 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:20:13.601 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 10:20:14.626 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 10:20:14.626 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 10:20:14.626 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 10:20:14.626 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 10:20:14.628 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:07:18.089 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:07:18.092 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:07:18.092 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:07:18.092 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:07:18.092 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:07:19.782 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:07:19.782 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:07:19.782 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:07:19.782 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:07:19.782 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:07:21.222 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:07:21.222 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:07:21.222 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:07:21.222 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:07:21.222 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:07:22.548 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:07:22.549 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:07:22.550 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:07:22.550 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:07:22.551 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:07:23.717 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:07:23.718 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:07:23.718 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:07:23.718 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:07:23.718 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:07:24.926 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:07:24.926 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:07:24.926 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:07:24.926 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:07:24.926 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:07:26.157 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:07:26.157 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:07:26.157 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:07:26.157 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:07:26.157 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:16.638 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:16.639 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:16.639 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:16.639 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:16.639 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:18.052 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:18.052 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:18.052 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:18.052 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:18.052 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:19.733 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:19.733 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:19.734 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:19.734 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:19.734 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:20.829 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:20.829 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:20.829 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:20.829 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:20.829 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:21.950 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:21.950 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:21.950 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:21.950 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:21.950 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:41.991 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:41.991 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:41.991 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:41.991 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:41.991 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:43.197 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:43.197 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:43.197 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:43.197 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:43.198 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:44.429 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:44.429 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:44.429 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:44.429 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:44.429 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:45.541 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:45.542 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:45.542 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:45.542 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:45.542 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:08:46.584 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:08:46.584 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:08:46.584 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:08:46.585 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:08:46.585 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:19.806 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:19.806 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:19.807 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:19.807 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:19.807 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:21.759 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:21.759 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:21.759 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:21.759 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:21.759 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:23.245 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:23.245 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:23.245 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:23.245 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:23.246 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:24.740 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:24.741 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:24.741 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:24.741 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:24.741 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:25.941 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:27.116 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:27.479 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:27.479 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:27.479 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:27.479 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:27.479 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:27.479 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:27.479 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:27.479 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:29.044 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:29.044 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:29.044 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:29.044 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:29.045 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:16:30.516 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:16:30.517 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:16:30.517 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:16:30.517 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:16:30.517 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:06.574 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:06.574 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:06.575 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:06.575 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:06.575 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:08.038 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:08.038 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:08.038 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:08.038 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:08.038 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:09.172 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:09.172 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:09.172 [http-nio-8080-exec-8] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:09.172 [http-nio-8080-exec-8] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:09.172 [http-nio-8080-exec-8] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:10.203 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:10.203 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:10.203 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:10.204 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:10.204 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:11.627 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:11.628 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:11.628 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:11.628 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:11.628 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:12.731 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:12.731 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:12.731 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:12.731 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:12.731 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:13.851 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:14.817 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:15.078 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:15.078 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:15.078 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:15.078 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:15.078 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:15.078 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:15.078 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:15.078 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:33:16.411 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:33:16.411 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:33:16.411 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:33:16.411 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:33:16.412 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:34:03.787 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:34:03.788 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:34:03.788 [http-nio-8080-exec-9] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:34:03.788 [http-nio-8080-exec-9] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:34:03.788 [http-nio-8080-exec-9] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:34:05.308 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:34:05.308 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:34:05.308 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:34:05.308 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:34:05.308 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:34:06.788 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:34:06.789 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:34:06.789 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:34:06.789 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:34:06.789 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:34:07.899 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:34:07.899 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:34:07.899 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:34:07.900 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:34:07.900 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:34:09.180 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:34:09.180 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:34:09.180 [http-nio-8080-exec-1] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:34:09.180 [http-nio-8080-exec-1] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:34:09.181 [http-nio-8080-exec-1] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:34:10.819 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:34:10.820 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:34:10.820 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:34:10.820 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:34:10.820 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:34:11.996 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:34:11.996 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:34:11.996 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:34:11.996 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:34:11.997 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:57:32.507 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:57:32.508 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:57:32.508 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:57:32.508 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:57:32.508 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 11:57:47.642 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 11:57:47.643 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 11:57:47.643 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 11:57:47.643 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 11:57:47.643 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:07:52.154 [main] INFO  com.twq.WebApplication - Starting WebApplication on LAPTOP-SRR2VMQK with PID 7712 (E:\bigdata-course\workspace\dw-course\trade-sys\target\classes started by think in E:\bigdata-course\workspace\dw-course)
+2018-06-14 12:07:52.162 [main] INFO  com.twq.WebApplication - No active profile set, falling back to default profiles: default
+2018-06-14 12:07:52.294 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Thu Jun 14 12:07:52 CST 2018]; root of context hierarchy
+2018-06-14 12:07:55.636 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-06-14 12:07:55.656 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-06-14 12:07:55.667 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-06-14 12:07:55.667 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-06-14 12:07:55.681 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files\python;D:\工作软件\apache-maven-3.5.3\bin;D:\Program Files\Java\jdk1.8.0_161\bin;E:\bigdata-course-thinkpad\bigdata-course\spark\scala-2.11.8\scala-2.11.8\bin;E:\bigdata-course\2_大数据入门\hadoop-2.7.5\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\think\AppData\Local\Microsoft\WindowsApps;;.]
+2018-06-14 12:07:55.824 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-06-14 12:07:55.825 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3531 ms
+2018-06-14 12:07:56.016 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-06-14 12:07:56.022 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 12:07:56.023 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 12:07:56.023 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 12:07:56.023 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 12:07:56.274 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 12:07:56.572 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Thu Jun 14 12:07:52 CST 2018]; root of context hierarchy
+2018-06-14 12:07:56.724 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/index]}" onto public java.lang.String com.twq.controller.ShoppingCartController.index(org.springframework.ui.Model)
+2018-06-14 12:07:56.725 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/succ]}" onto public java.lang.String com.twq.controller.ShoppingCartController.succ()
+2018-06-14 12:07:56.726 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/add],methods=[POST]}" onto public java.lang.String com.twq.controller.ShoppingCartController.addProduct2Cart()
+2018-06-14 12:07:56.739 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-14 12:07:56.741 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 12:07:56.794 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 12:07:56.794 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 12:07:57.010 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-06-14 12:07:57.146 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-06-14 12:07:57.268 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-06-14 12:07:57.281 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-06-14 12:07:57.334 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-14 12:07:57.344 [main] INFO  com.twq.WebApplication - Started WebApplication in 5.644 seconds (JVM running for 6.519)
+2018-06-14 12:08:12.452 [http-nio-8080-exec-10] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 12:08:12.452 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 12:08:12.478 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-06-14 12:08:45.407 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:08:45.407 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:08:45.407 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:08:45.407 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:08:45.407 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:08:46.983 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:08:46.983 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:08:46.983 [http-nio-8080-exec-6] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:08:46.983 [http-nio-8080-exec-6] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:08:46.984 [http-nio-8080-exec-6] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:08:48.050 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:08:48.050 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:08:48.050 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:08:48.050 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:08:48.050 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:08:49.371 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:08:49.372 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:08:49.372 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:08:49.372 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:08:49.372 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:08:50.530 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:08:50.530 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:08:50.530 [http-nio-8080-exec-4] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:08:50.531 [http-nio-8080-exec-4] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:08:50.531 [http-nio-8080-exec-4] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:08:51.857 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:08:51.857 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:08:51.857 [http-nio-8080-exec-3] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:08:51.857 [http-nio-8080-exec-3] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:08:51.857 [http-nio-8080-exec-3] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:08:52.852 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:08:52.852 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:08:52.852 [http-nio-8080-exec-10] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:08:52.852 [http-nio-8080-exec-10] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:08:52.852 [http-nio-8080-exec-10] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:10:04.451 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:10:04.451 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:10:04.451 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:10:04.451 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:10:04.451 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:10:06.763 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:10:06.764 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:10:06.764 [http-nio-8080-exec-2] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:10:06.764 [http-nio-8080-exec-2] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:10:06.764 [http-nio-8080-exec-2] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:10:09.481 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:10:09.482 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:10:09.482 [http-nio-8080-exec-7] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:10:09.482 [http-nio-8080-exec-7] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:10:09.482 [http-nio-8080-exec-7] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
+2018-06-14 12:10:10.914 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - starting addProduct2Cart
+2018-06-14 12:10:10.915 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - starting addProduct2Cart in service
+2018-06-14 12:10:10.915 [http-nio-8080-exec-5] INFO  com.twq.dao.impl.ShoppingCartDaoImpl - add product in db shopping cart
+2018-06-14 12:10:10.915 [http-nio-8080-exec-5] INFO  com.twq.service.impl.ShoppingCartServiceImpl - end addProduct2Cart in service
+2018-06-14 12:10:10.915 [http-nio-8080-exec-5] INFO  com.twq.controller.ShoppingCartController - end addProduct2Cart
